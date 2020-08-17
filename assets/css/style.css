@@ -1,0 +1,79 @@
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+   /* HTML */
+
+   * {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+.main-container {
+    min-height: 100vh; 
+    overflow: hidden;
+    display: block;
+    padding-bottom: 100px; 
+}
+
+#index-footer {
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+    
+    /*---------- Nav Bar */
+.navbar {
+    background-color: #990808;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+}
+
+.dropdown-menu {
+    background-color: #170101
+}
+
+.dropdown-item {
+    color: white;
+}
+
+
+    /*---------- Index.html */
+       /* ---------- Header */
+
+#index-header {
+    height: 800px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#index-header-image {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    width: 100%;
+    background: url(../images/dud-canal.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+
+#header-text h2{
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-top: 160px;
+    text-shadow: 5px 3px 3px black;
+    font-size: 75px;
+}
