@@ -6,7 +6,9 @@
      <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
     <!--Style CSS-->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />  
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" /> 
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/560f33c40f.js" crossorigin="anonymous"></script>
     <!--Title-->
     <title>The Black Country Canal Walk</title>
 </head>
@@ -26,10 +28,9 @@
 <li class="nav-item dropdown">
 	<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Paths</a>
     <ul class="dropdown-menu">
-	  <li><a class="dropdown-item" href="stourbridge-path.html">Stourbridge Path</a></li>
-	  <li><a class="dropdown-item" href="dudley-path.html">Dudley Path</a></li>
-      <li><a class="dropdown-item" href="wordsley-path.html">Wordsley Path</a></li>
-      <li><a class="dropdown-item" href="netherton-path.html">Netherton Path</a></li>
+	  <li><a class="dropdown-item" href="stourbridge-path.html">Stourbridge/Wordsley Path</a></li>
+	  <li><a class="dropdown-item" href="dudley-no1-path.html">Dudley No.1 Path</a></li>
+      <li><a class="dropdown-item" href="dudley-no2-path.html">Dudley No.2 Path</a></li>
     </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="attractions.html">Attractions</a></li>
@@ -49,11 +50,53 @@
          </div>
       </section>
 <section id="history">
-   <div>
-       <h2>HISTORY OF THE BLACK COUNTRY CANALS</h2>
-   </div>
+    <div class="container">
+       <div class="row">
+           <div class="col-12 history-title">
+               <h2>HISTORY OF THE BLACK COUNTRY CANALS</h2>
+           </div>
+           <div class="container"> <!--created by https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp-->
+               <img src="assets/images/canal-history.jpg" alt="Avatar" class="image"> <!--Image found on https://www.birminghammail.co.uk/news/nostalgia/gallery/dudley-stourbridge-canals-through-time-10844689 Imaged captured by Amberley Publishing-->
+               <div class="overlay">
+                   <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    In voluptas nesciunt, excepturi blanditiis non placeat libero ipsam doloremque,
+                     maxime, perferendis voluptates soluta voluptatum vel officiis? Ducimus at natus optio quibusdam?</div>
+                </div>
+            </div>
+       </div>
+    </div>
 </section>
-
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="footer-links">
+                    <ul class="column list-inline text-center">
+                      <h3>Feel free to learn more about our history and where we are!</h3>
+                      <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="footer-links">
+                   <ul class="list-inline">
+                    <h3>BLACK COUNTRY CANAL WALKS</h3>
+                    <li class="list-inline-item"><a href="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="footer-links">
+                   <ul class="list-inline">
+                    <h3>Want to find out more? Want to help us add to our site?</h3>
+                    <li class="list-inline-item"><a href="contact.html">Contact Us!</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>    
+    </div>
+</footer>
 <!-- JS, Popper.js, and jQuery -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Link to code to allow navbar to form into a hamburger icon and open up to links-->
