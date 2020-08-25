@@ -12,33 +12,33 @@
     <!--Title-->
     <title>The Black Country Canal Walk</title>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark"> <!-- Navbar credited to https://bootsnipp.com/snippets/nNWr8 by vosidiy-->
-	<a class="navbar-brand" href="#"> <img class="logo" src="../assets/images/black-country-flag.png" height="28"> CANAL WALK GUIDE</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbar1">
-    <ul class="navbar-nav ml-auto"> 
-<li class="nav-item active">
-<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-</li>
-<li class="nav-item"><a class="nav-link" href="index.html#history">History</a></li>
-<li class="nav-item"><a class="nav-link" href="index.html#map">Map</a></li>
-<li class="nav-item dropdown">
-	<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Paths</a>
-    <ul class="dropdown-menu">
-	  <li><a class="dropdown-item" href="stourbridge-path.html">Stourbridge/Wordsley Path</a></li>
-	  <li><a class="dropdown-item" href="dudley-no1-path.html">Dudley No.1 Path</a></li>
-      <li><a class="dropdown-item" href="dudley-no2-path.html">Dudley No.2 Path</a></li>
-    </ul>
-</li>
-<li class="nav-item"><a class="nav-link" href="attractions.html">Attractions</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
- <section id="index-header">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Navbar credited to https://bootsnipp.com/snippets/nNWr8 by vosidiy-->
+	  <a class="navbar-brand" href="#"> <img class="logo" src="../assets/images/black-country-flag.png" height="28"> CANAL WALK GUIDE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+      <ul class="navbar-nav ml-auto"> 
+        <li class="nav-item active">
+           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html#history">History</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#map">Map</a></li>
+        <li class="nav-item dropdown">
+	        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Paths</a>
+      <ul class="dropdown-menu">
+	    <li><a class="dropdown-item" href="stourbridge-path.html">Stourbridge/Wordsley Path</a></li>
+	    <li><a class="dropdown-item" href="dudley-no1-path.html">Dudley No.1 Path</a></li>
+        <li><a class="dropdown-item" href="dudley-no2-path.html">Dudley No.2 Path</a></li>
+      </ul>
+      </li>
+        <li class="nav-item"><a class="nav-link" href="attractions.html">Attractions</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+   </nav>
+   <section id="index-header">
          <div class="container-fluid" id="index-header-image">
             <div class="row">
                <div class="col-12">
@@ -49,13 +49,13 @@
             </div>
          </div>
       </section>
-<section id="history">
-    <div class="container">
-       <div class="row">
-           <div class="col-12 history-title">
+   <section id="history">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 history-title">
                <h2>HISTORY OF THE BLACK COUNTRY CANALS</h2>
-           </div>
-           <div class="container"> <!--created by https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp-->
+            </div>
+            <div class="container"> <!--created by https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp-->
                <img src="assets/images/canal-history.jpg" alt="Avatar" class="image"> <!--Image found on https://www.birminghammail.co.uk/news/nostalgia/gallery/dudley-stourbridge-canals-through-time-10844689 Imaged captured by Amberley Publishing-->
                <div class="overlay">
                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -64,6 +64,18 @@
                 </div>
             </div>
        </div>
+    </div>
+</section>
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 section-column">
+            <div class="row">
+                <div class="col-12">
+                   <h3 class="section-heading uppercase">Black Country Canal Map</h3>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
     </div>
 </section>
 <footer id="footer">
@@ -97,6 +109,12 @@
         </div>    
     </div>
 </footer>
+<script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
+    </script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap">
+    </script>
+    <script src="assets/js/maps.js"></script>
 <!-- JS, Popper.js, and jQuery -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Link to code to allow navbar to form into a hamburger icon and open up to links-->
