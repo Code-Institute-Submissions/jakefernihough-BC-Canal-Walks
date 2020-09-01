@@ -7,6 +7,8 @@ function initMap() {
         }
     });
 
+    // 52.456890 - lat -2.148731 - lng - Stourbridge.
+
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     var locations = [

@@ -15,6 +15,7 @@ html,
 body {
     height: 100%;
     position: relative;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .main-container {
@@ -92,6 +93,7 @@ body {
     color: white;
     background-color: rgb(153, 8, 8);
     text-decoration: underline green;
+    text-shadow: 3px 2px 2px #170101;
 }
 
 .history-intro {
@@ -197,9 +199,43 @@ div#map {min-height: 360px;}
     opacity: 90%;
 }
 
+    /* ----------- PATH FACTS ----- */
+
+#path-facts {
+    background-color: rgba(153, 8, 8);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid green;
+}
+
+.fact-title {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: underline green;
+    text-shadow: 3px 2px 2px #170101;
+}
+
+.facts-summary p{
+    color: silver;
+    padding-top: 16px;
+}
+
 
 
      /* ---------- Dudley No1 Path */
+
+#dudley1-header-image {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    width: 100%;
+    background: url(../images/dud1-path.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
 
      /* ---------- Dudley no2 Path */
 
