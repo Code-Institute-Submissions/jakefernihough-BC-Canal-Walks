@@ -25,12 +25,6 @@ body {
     padding-bottom: 100px; 
 }
 
-#index-footer {
-    margin-top: 30px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
     
     /*---------- Nav Bar */
 .navbar {
@@ -52,31 +46,39 @@ body {
        /* ---------- Header */
 
 #index-header {
-    height: 700px;
+    height: 500px;
     width: 100%;
 }
 
-#index-header-image {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-    width: 100%;
-    background: url(../images/dud-canal.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    opacity: 90%;
+.module {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/dud-canal.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  float: left;
 }
 
-#header-text h2{
-    font-family: 'Libre Baskerville', serif;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    padding-top: 190px;
-    text-shadow: 5px 3px 3px black;
-    font-size: 75px;
+.header-text h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 3px 2px 2px black;
 }
+
 
 /* ---------- History */
 
@@ -143,7 +145,7 @@ body {
 
 .text p {
   color: white;
-  font-size: 15px;
+  font-size: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -185,18 +187,39 @@ body {
 
 div#map {min-height: 360px;}
 
+#section-map {
+    border-top: 2px green solid;
+    background-color: #e3dcdc;
+}
+
+.section-column {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-column h3 {
+    font-family: 'Libre Baskerville', 'sarif';
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    color: #400909;
+    padding-bottom: 10px;
+}
+
     /* ---------- Stourbridge Path */
 
-#stourbridge-header-image {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-    width: 100%;
-    background: url(../images/sbridge-canal.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    opacity: 90%;
+.stourbridge-module {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/sbridge-canal.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  float: left;
 }
 
     /* ----------- PATH FACTS ----- */
@@ -219,48 +242,43 @@ div#map {min-height: 360px;}
 .facts-summary p{
     color: silver;
     padding-top: 16px;
+    text-align: left;
+}
+
+.fact-image img {
+    border: solid white 2px;
 }
 
 
 
      /* ---------- Dudley No1 Path */
 
-#dudley1-header-image {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-    width: 100%;
-    background: url(../images/dud1-path.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    opacity: 90%;
+.dudley1-module {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/dud1-path.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  float: left;
 }
 
      /* ---------- Dudley no2 Path */
 
-#dudley2-header-image {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-    width: 100%;
-    background: url(../images/dudley-2-path.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    opacity: 90%;
-}
-
-   /* ---------- Attractions */
-
-#attractions-header-image {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-    width: 100%;
-    background: url(../images/waterfront.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    opacity: 90%;
+.dudley2-module {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/dudley-2-path.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  float: left;
 }

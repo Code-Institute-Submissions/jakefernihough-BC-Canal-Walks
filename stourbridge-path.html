@@ -16,6 +16,7 @@
     <title>The Black Country Canal Walk</title>
 </head>
    <body>
+     <div class="main-container">
        <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Navbar credited to https://bootsnipp.com/snippets/nNWr8 by vosidiy-->
 	   <a class="navbar-brand" href="#"> <img class="logo" src="../assets/images/black-country-flag.png" height="28"> CANAL WALK GUIDE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,16 +39,10 @@
         </div>
        </nav>
        <section id="index-header">
-         <div class="container-fluid" id="stourbridge-header-image">
-            <div class="row">
-               <div class="col-12">
-                  <div id="header-text">
-                     <h2>STOURBRIDGE CANAL</h2>
-                  </div>
-               </div>
+            <div class="header-text stourbridge-module">
+                <h2>STOURBRIDGE CANAL</h2>
             </div>
-         </div>
-       </section>
+        </section> 
        <section id="path-facts">
            <div class="container">
                <div class="row">
@@ -67,24 +62,26 @@
                            in Stourbridge during the times. More about the History can be found at the Glass Cone Museum which is an attraction on the walk.</p>
                        </div>
                    </div>
-                   <div class="col-lg-4 col-md-4 col-xs-12">
-                       <img src="assets/images/glass-cone.jpg" alt="Glass Cone">
+                   <div class="fact-image">
+                       <div class="col-lg-4 col-md-4 col-xs-12">
+                           <img src="assets/images/glass-cone.jpg" alt="Glass Cone">
+                       </div>
                    </div>
                </div>
            </div>
        </section>
-       <section class="container-fluid">
-           <div class="row">
-               <div class="col-md-6 section-column">
-                   <div class="row">
-                        <div class="col-12">
-                          <h3 class="section-heading uppercase">Stourbridge Canal Path Attractions</h3>
-                        </div>
+    <section id="section-map" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">Stourbridge Canal Attractions</h3>
                     </div>
-                   <div id="map"></div>
                 </div>
+                <div id="map"></div>
             </div>
-        </section>
+        </div>
+    </section>
        <footer id="footer">
          <div class="container">
             <div class="row">
@@ -180,5 +177,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+     </div>
   </body>
 </html>
