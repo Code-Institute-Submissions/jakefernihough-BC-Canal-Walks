@@ -113,12 +113,76 @@
             </div>    
           </div>
        </footer>
+       <script>
+       function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 11,
+                center: {
+                    lat: 52.533333,
+                    lng: -2.033333
+                }
+            });
+
+            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+
+            var locations = [ {
+                lat: 52.49824,   /* Blowers Green Pump House */
+                lng: -2.09684
+            }, {
+                lat: 52.49820,  /* Dudley no.2 canal sign*/
+                lng: -2.09684
+            }, {
+                lat: 52.49631,   /* History plot 1 */
+                lng: -2.09642
+            }, {
+                lat: 52.49192,   /* Bumble Hole Man sign */
+                lng: -2.09871
+            }, {
+                lat: 52.49628,   /* Coalition Sign */
+                lng: -2.09684
+            }, {
+                lat: 52.49192,   /* Brewins Tunnel Bridge */
+                lng: -2.09871
+            }, {
+                lat: 52.48332,   /* Netherton Resevoir */
+                lng: -2.09214
+            }, {
+                lat: 52.46613,   /* Astles Bridge */
+                lng: -2.10152
+            }, {
+                lat: 52.48489,   /* Illustration sign */
+                lng: -2.07793
+            }, {
+                lat: 52.48566,   /* Cooper Sign */
+                lng: -2.07475
+            }, {
+                lat: 52.48947,   /* Bumble Hole */
+                lng: -2.07331
+            }, {
+                lat: 52.49138,   /* Windmills End Pumping Station */
+                lng: -2.06873
+            }, {
+                lat: 52.49341,   /* Netherton Tunnel */
+                lng: -2.06903
+            },];
+
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap"></script>
+         <!--MAP LINKS-->
        <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
-    </script>
-    <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap">
-    </script>
-    <script src="assets/js/maps.js"></script>
+         </script>
     <!-- JS, Popper.js, and jQuery -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--Link to code to allow navbar to form into a hamburger icon and open up to links-->

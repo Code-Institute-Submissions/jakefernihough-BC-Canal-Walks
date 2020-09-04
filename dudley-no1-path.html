@@ -112,13 +112,64 @@
         </div>    
     </div>
     </footer>
+            <script>
+    function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 11,
+                center: {
+                    lat: 52.533333,
+                    lng: -2.033333
+                }
+            });
+
+            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+
+            var locations = [{
+                lat: 52.4777,    /* Delph Locks */
+                lng: -2.1191
+            }, {
+                lat: 52.4871,  /* Waterfront */
+                lng: -2.115651
+            }, {
+                lat: 52.49786,  /* Canal Cottage */
+                lng: -2.0989
+            }, {
+                lat: 52.49854, /* Park Lane Viaduct */
+                lng: -2.09926
+            }, {
+                lat: 52.49913,    /* Canal Park */
+                lng: -2.09997
+            }, {
+                lat: 52.50098,    /* Dudley Tunnel */
+                lng: -2.10055
+            }, {
+                lat: 52.51867,    /* Black Country Museum */
+                lng: -2.07391
+            }, {
+                lat: 52.51867,    /* Fishing Ornament */
+                lng: -2.07391
+            }, {
+                lat: 52.52197,    /* Old Rail Line */
+                lng: -2.06357
+            },];
+
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap"></script>
          <!--MAP LINKS-->
        <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
          </script>
-        <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap">
-        </script>
-        <script src="assets/js/maps.js"></script>
           <!-- JS, Popper.js, and jQuery -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--Link to code to allow navbar to form into a hamburger icon and open up to links-->
