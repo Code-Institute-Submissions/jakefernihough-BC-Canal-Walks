@@ -73,7 +73,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 50px;
+  font-size: 42px;
   transform: translate(-50%, -50%);
   text-align: center;
   text-shadow: 3px 2px 2px black;
@@ -89,17 +89,19 @@ body {
     
 }
 
-.history-title {
+.history-title h2 {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     color: white;
     background-color: rgb(153, 8, 8);
     text-decoration: underline green;
     text-shadow: 3px 2px 2px #170101;
+    font-size: 35px;
 }
 
 .history-intro {
-    text-align: center;
+    text-align: left;
+    padding-left: 6px;
     font-family: 'Libre Baskerville', serif;
     color: white;
 }
@@ -145,7 +147,7 @@ body {
 
 .text p {
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -281,4 +283,74 @@ div#map {min-height: 360px;}
   height: 500px;
   position: relative;
   float: left;
+}
+
+
+
+   /* ----------- CONTACT ---- */
+
+.contact-module {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/waterfront.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  float: left;
+}
+
+#contact {
+    background-color: #e3dcdc;
+}
+
+   /* ------ Contact Form created by Bootstrap 4.1.1 Snippet by kshiti06 / https://bootsnipp.com/snippets/7nmOW ---- */
+.contact-form{
+    background: #e3dcdc;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3 {
+    text-align: center;
+    color: #990808
+}
+.contact-form h4{
+    margin-top: 5%;
+    margin-bottom: 8%;
+    text-align: center;
+    color: #990808;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #990808;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #e3dcdc;
+    background-color: #990808;
+    border: none;
+    cursor: pointer;
 }
