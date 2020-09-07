@@ -15,14 +15,14 @@
     </script>
     <script type="text/javascript">
         (function(){
-          emailjs.init("user_m0XFxzysCXR6aYmDXT7mr");
-          emailjs.send("<gmail>","<black country canals>",{name: "Black Country Canals", notes: "I'd like to find out more about..."})
+           emailjs.init("user_m0XFxzysCXR6aYmDXT7mr");
         })();
     </script>
     <!--Title-->
     <title>The Black Country Canal Walk</title>
 </head>
-   <body>
+   <body> <!--Nav Bar-->
+      <div class="main-container">
        <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Navbar credited to https://bootsnipp.com/snippets/nNWr8 by vosidiy-->
 	   <a class="navbar-brand" href="#"> <img class="logo" src="../assets/images/black-country-flag.png" height="28"> CANAL WALK GUIDE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,14 +44,14 @@
             </ul>
         </div>
        </nav>
-        <section id="index-header">
+        <section id="index-header"> <!--Header-->
             <div class="header-text contact-module">
                 <h2>CONTACT US</h2>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact"> <!--Contact Form-->
             <div class="container contact-form"> <!--Contact Form--> <!--https://bootsnipp.com/snippets/7nmOW / Bootstrap 4.1.1 Snippet by kshiti06-->
-            <form method="post">
+            <form onsubmit="return sendMail(this);">
                 <h3>If you have any questions about the canals, or would like any information on events happening,</h3>
                 <h4>Drop Us a Message</h4>
                <div class="row">
@@ -78,7 +78,7 @@
             </form>
           </div>
         </section>
-       <footer id="footer">
+       <footer id="footer"> <!--Footer-->
          <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-xs-12">
@@ -109,6 +109,8 @@
             </div>    
           </div>
        </footer>
+       </div>
+    <script src="assets/js/sendEmail.js"></script>
     <!-- JS, Popper.js, and jQuery -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--Link to code to allow navbar to form into a hamburger icon and open up to links-->

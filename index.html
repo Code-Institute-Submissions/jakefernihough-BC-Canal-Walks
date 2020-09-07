@@ -13,7 +13,7 @@
     <title>The Black Country Canal Walk</title>
 </head>
   <body>
-   <div class="main-container">
+   <div class="main-container"> <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Navbar credited to https://bootsnipp.com/snippets/nNWr8 by vosidiy-->
 	  <a class="navbar-brand" href="#"> <img class="logo" src="../assets/images/black-country-flag.png" height="28"> CANAL WALK GUIDE</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,18 +37,18 @@
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
-   </nav>
-   <section id="index-header">
+   </nav> <!--Nav Bar Ends-->
+   <section id="index-header"> <!--header starts-->
         <div class="module header-text">
            <h2>Welcome to the Black Country Canal Walk Guide</h2>
         </div>
     </section>
-   <section id="history">
+   <section id="history"> <!--history section starts-->
       <div class="container-fluid">
          <div class="row">
-            <div class="col-12 history-title">
+            <div class="col-12 history-title"> <!--history title-->
                <h2>HISTORY OF THE BLACK COUNTRY CANALS</h2>
-            </div>
+            </div> <!--history paragraph-->
                 <p class="history-intro">The canals are found in an area nicknamed the Black Country which is located around the Dudley Borough in the West Midlands, UK.
                 The canal was opened in 1779, starting with the <a href="stourbridge-path.html">Stourbridge Canal.</a> Eventually it connected through the 
                 Dudley Tunnel and through to the Birmingham Canal in 1792.
@@ -58,7 +58,7 @@
                 potential cargos that became an effective industry otherwise known as the <a href="https://en.wikipedia.org/wiki/Industrial_Revolution">Industrial
                 Revolution.</a></p>
             <div class="col-lg-6 col-md-6 col-xs-12">
-               <div class="container">
+               <div class="container"> <!--nine locks image overlay-->
                   <img src="assets/images/nine-locks.jpg" alt="Avatar" class="image">
                     <div class="overlay">
                       <div class="text">
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-12">
-               <div class="container">
+               <div class="container"> <!--delph locks image-->
                   <img src="assets/images/delph-locks.jpg" alt="Avatar" class="image">
                     <div class="overlay">
                       <div class="text">
@@ -87,7 +87,7 @@
        </div>
     </div>
     </section>
-    <section id="section-map" class="container-fluid">
+    <section id="section-map" class="container-fluid"> <!--Map-->
         <div class="row">
             <div class="col-md-6 section-column">
                 <div class="row">
@@ -99,7 +99,7 @@
             </div>
         </div>
     </section>
-    <footer id="footer">
+    <footer id="footer"> <!--Footer-->
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-xs-12">
@@ -130,8 +130,9 @@
         </div>    
     </div>
     </footer>
-            <script>
-    function initMap() {
+    <script>
+       // Map Coordinates.
+       function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 11,
                 center: {
