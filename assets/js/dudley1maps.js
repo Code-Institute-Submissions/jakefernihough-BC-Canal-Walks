@@ -10,34 +10,66 @@ function initMap() {
   var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
   var markers = [{
-      title: "Stourbridge Canal",
-      lat: "52.4689",
-      lng: "-2.148731",
+      title: "Delph Locks",
+      lat: "52.4777",
+      lng: "-2.1191",
       description:
         "To find out more about the Stourbridge Canal, click here!",
-    },
-    {
-      title: "Dudley No.2 Path",
+    }, {
+      title: "The Waterfront",
+      lat: "52.4871",
+      lng: "-2.115651",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Canal Cottage",
+      lat: "52.49786",
+      lng: "-2.0989",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Park Lane Viaduct",
+      lat: "52.49854",
+      lng: "-2.09926",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Canal Park",
+      lat: "52.49913",
+      lng: "-2.09997",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Dudley Tunnel",
+      lat: "52.50098",
+      lng: "-2.10055",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "The Black Country Museum",
       lat: "52.51867",
       lng: "-2.07391",
       description:
-        "To find out more about the Dudley No.2 Path, click here!",
-    },
-    {
-      title: "Dudley No.1 Path",
-      lat: "52.49341",
-      lng: "-2.06903",
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "The Black Country Museum",
+      lat: "52.52009",
+      lng: "-2.07526",
       description:
-        "To find out more about the Dudley No.1 Path, click here!",
-    },
-  ];
-
-  //   var markers = locations.map(function (location, i) {
-  //     return new google.maps.Marker({
-  //       position: location,
-  //       label: labels[i % labels.length],
-  //     });
-  //   });
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "The Fishing Ornament",
+      lat: "52.51867",
+      lng: "-2.07391",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "The Old Rail Line",
+      lat: "52.52197",
+      lng: "-2.06357",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }];
 
   var mapOptions = {
     center: new google.maps.LatLng(

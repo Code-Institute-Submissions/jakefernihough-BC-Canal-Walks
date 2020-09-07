@@ -10,36 +10,56 @@ function initMap() {
   var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
   var markers = [{
-      title: "Stourbridge Canal",
-      lat: "52.4689",
-      lng: "-2.148731",
+      title: "Buckpool Nature Reserve",
+      lat: "52.48121",
+      lng: "-2.14528",
       description:
         "To find out more about the Stourbridge Canal, click here!",
-    },
-    {
-      title: "Dudley No.2 Path",
-      lat: "52.51867",
-      lng: "-2.07391",
+    }, {
+      title: "Locks Buckpool House",
+      lat: "52.47951",
+      lng: "-2.14963",
       description:
-        "To find out more about the Dudley No.2 Path, click here!",
-    },
-    {
-      title: "Dudley No.1 Path",
-      lat: "52.49341",
-      lng: "-2.06903",
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "The Dock",
+      lat: "52.47731",
+      lng: "-2.15361",
       description:
-        "To find out more about the Dudley No.1 Path, click here!",
-    },
-  ];
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Glass Cone Museum",
+      lat: "52.47721",
+      lng: "-2.15476",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Old Glass Warehouse",
+      lat: "52.47635",
+      lng: "-2.15677",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Ornament Dock",
+      lat: "52.46988",
+      lng: "-2.15801",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Wordsley Junction Bridge",
+      lat: "52.47287",
+      lng: "-2.16387",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }, {
+      title: "Stourbridge Tow Path",
+      lat: "52.46988",
+      lng: "-2.15801",
+      description:
+        "To find out more about the Stourbridge Canal, click here!",
+    }];
 
-  //   var markers = locations.map(function (location, i) {
-  //     return new google.maps.Marker({
-  //       position: location,
-  //       label: labels[i % labels.length],
-  //     });
-  //   });
-
-  var mapOptions = {
+   var mapOptions = {
     center: new google.maps.LatLng(
       parseFloat(markers[0].lat),
       parseFloat(markers[0].lng)
