@@ -90,6 +90,7 @@ function initMap() {
       position: myLatlng,
       map: map,
       title: data.title,
+      icon: data.icon,
     });
 
     //Attach click event to the marker.

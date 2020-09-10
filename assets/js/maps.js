@@ -15,6 +15,8 @@ function initMap() {
       lng: "-2.148731",
       description:
         "To find out more about the Stourbridge Canal, click here!",
+      icon: "assets/images/glass-cone1.jpg",
+      url: "stourbridge-path.html",
     },
     {
       title: "Dudley No.2 Path",
@@ -22,22 +24,18 @@ function initMap() {
       lng: "-2.07391",
       description:
         "To find out more about the Dudley No.2 Path, click here!",
+      icon: "assets/images/",
+      url: "dudley-no2-path.html",
     },
     {
+      icon: "assets/images/waterfront.jpg",
       title: "Dudley No.1 Path",
       lat: "52.49341",
       lng: "-2.06903",
-      description:
-        "To find out more about the Dudley No.1 Path, click here!",
+      description: "To find out more about the Dudley No.1 Path, click here!",
+      url: "dudley-no1-path.html"
     },
   ];
-
-  //   var markers = locations.map(function (location, i) {
-  //     return new google.maps.Marker({
-  //       position: location,
-  //       label: labels[i % labels.length],
-  //     });
-  //   });
 
   var mapOptions = {
     center: new google.maps.LatLng(
@@ -65,15 +63,10 @@ function initMap() {
       google.maps.event.addListener(marker, "click", function (e) {
         //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
         infoWindow.setContent(
-          "<div style = 'width:200px;min-height:70px'>" + data.title + "</div>"
+          "<div style = 'width:100%;min-height:30px;font-weight:bold;'>" + data.title + "</div>" + data.description 
         );
         infoWindow.open(map, marker);
       });
     })(marker, data);
   }
-
-  //   var markerCluster = new MarkerClusterer(map, markers, {
-  //     imagePath:
-  //       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  //   });
 }
