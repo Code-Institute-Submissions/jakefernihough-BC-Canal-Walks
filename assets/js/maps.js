@@ -24,7 +24,7 @@ function initMap() {
       lng: "-2.07391",
       description:
         "To find out more about the Dudley No.2 Path, click here!",
-      icon: "assets/images/",
+      icon: "assets/images/dudley-2-path.jpg",
       url: "dudley-no2-path.html",
     },
     {

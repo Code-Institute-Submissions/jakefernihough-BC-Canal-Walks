@@ -14,61 +14,71 @@ function initMap() {
       lat: "52.4777",
       lng: "-2.1191",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "The magnificent Nine (technically now 8) Locks, otherwise known as the Delph Locks is where the Dudley No.1 Path begins",
+      icon: "assets/images/dudley-1/delph.jpg",
     }, {
       title: "The Waterfront",
       lat: "52.4871",
       lng: "-2.115651",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "Amazing building, scenery and an array of pubs and events, the Waterfront is a beautiful place to enjoy!",
+      icon: "assets/images/dudley-1/the-waterfront.jpg",
+    }, {
+      title: "Peartree Roving Bridge",
+      lat: "52.49202",
+      lng: "-2.10246",
+      description:
+        "Possibly one of the smallest bridges you will find, but a part of a beautiful walk.",
+      icon: "assets/images/dudley-1/peartree.jpg",
     }, {
       title: "Canal Cottage",
       lat: "52.49786",
       lng: "-2.0989",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "The Keeper of the locks!",
+      icon: "assets/images/dudley-1/canal-cottage.jpg",
     }, {
       title: "Park Lane Viaduct",
       lat: "52.49854",
       lng: "-2.09926",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "Amazing architecture! The bridges are a spectacle and should be admired!",
+      icon: "assets/images/dudley-1/park-lane-viaduct.jpg",
     }, {
       title: "Canal Park",
       lat: "52.49913",
       lng: "-2.09997",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "What a way to spend the day with your family or friends by coming for a picnic at the park!",
+      icon: "assets/images/dudley-1/canal-park.jpg",
     }, {
       title: "Dudley Tunnel",
       lat: "52.50098",
       lng: "-2.10055",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
-    }, {
-      title: "The Black Country Museum",
-      lat: "52.51867",
-      lng: "-2.07391",
-      description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "The tunnel that can only be accessed by a boat travels underneath Dudley Town Centre, to see the limestone tunnel! a whole new world can be discovered here! A must see!",
+      icon: "assets/images/dudley-1/tunnel-dudley.jpg",
     }, {
       title: "The Black Country Museum",
       lat: "52.52009",
       lng: "-2.07526",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "If you're a Peaky Blinders fan, then this is possibly the most important place you could ever visit!",
+      icon: "assets/images/dudley-1/bc-museum.jpg",
     }, {
       title: "The Fishing Ornament",
       lat: "52.51867",
       lng: "-2.07391",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "A nice little find on the path! The locals alway like to show some humour along the way!",
+      icon: "assets/images/dudley-1/fishing.jpg",
     }, {
       title: "The Old Rail Line",
       lat: "52.52197",
       lng: "-2.06357",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "Another aged transportation system ran close to the original transportation system of the old black country!",
+      icon: "assets/images/dudley-1/railway.jpg",
     }];
 
   var mapOptions = {
@@ -90,7 +100,6 @@ function initMap() {
       position: myLatlng,
       map: map,
       title: data.title,
-      icon: data.icon,
     });
 
     //Attach click event to the marker.
@@ -98,15 +107,10 @@ function initMap() {
       google.maps.event.addListener(marker, "click", function (e) {
         //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
         infoWindow.setContent(
-          "<div style = 'width:200px;min-height:70px'>" + data.title + "</div>"
+            "<div style = 'width:100%;min-height:30px;font-weight:bold;'>" + data.title + "</div>" + data.description 
         );
         infoWindow.open(map, marker);
       });
     })(marker, data);
   }
-
-  //   var markerCluster = new MarkerClusterer(map, markers, {
-  //     imagePath:
-  //       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  //   });
 }

@@ -14,49 +14,78 @@ function initMap() {
       lat: "52.48121",
       lng: "-2.14528",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "Start off the Stourbridge Canal with a wonder through the Buckpool Nature Reserve!",
+      icon: "assets/images/stourbridge/buckpool-reserve.jpg",
     }, {
       title: "Locks Buckpool House",
       lat: "52.47951",
       lng: "-2.14963",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "The keeper of the locks is located at the Buckppol House!",
+      icon: "assets/images/stourbridge/buckpool-house.jpg",
     }, {
-      title: "The Dock",
+      title: "The Poplars",
+      lat: "52.47781",
+      lng: "-2.15222",
+      description:
+        "Just one of the beautiful views you get to see on the Stourbridge Canal!",
+      icon: "assets/images/stourbridge/the-poplars.jpg",
+    },  {
+      title: "The Dock Pub",
       lat: "52.47731",
       lng: "-2.15361",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "Take a break at one of the oldest pubs in the area; The Dock!",
+      icon: "assets/images/stourbridge/the-dock-pub",
+    },  {
+      title: "The Dock Sign",
+      lat: "52.47735",
+      lng: "-2.15393",
+      description:
+        "Many directions to find new adventures!",
+      icon: "assets/images/stourbridge/dock-sign.jpg",
+    },  {
+      title: "Glass Cone Boathouse",
+      lat: "52.47731",
+      lng: "-2.15361",
+      description:
+        "The place where all the new supplies would be shipped to and from the Glass Cone!",
+      icon: "assets/images/stourbridge/boathouse.jpg",
     }, {
       title: "Glass Cone Museum",
       lat: "52.47721",
       lng: "-2.15476",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "An amazing piece of history of the Black Country Canals, a must-see for tourists!",
+      icon: "assets/images/stourbridge/glass-museum.jpg",
     }, {
       title: "Old Glass Warehouse",
       lat: "52.47635",
       lng: "-2.15677",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "This is where the work was done by the most talented people of the Industrial Revolution!",
+      icon: "assets/images/stourbridge/old-glass-warehouse.jpg",
     }, {
       title: "Ornament Dock",
       lat: "52.46988",
       lng: "-2.15801",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "One local likes to show off some fun ornaments for daily walkers!",
+      icon: "assets/images/stourbridge/ornament-dock",
     }, {
       title: "Wordsley Junction Bridge",
       lat: "52.47287",
       lng: "-2.16387",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "The bridge takes us towards Stourbridge or Kinver. Depending on which direction you want to take!",
+      icon: "assets/images/stourbridge/wordsley-junction.jpg",
     }, {
       title: "Stourbridge Tow Path",
       lat: "52.46988",
       lng: "-2.15801",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
+        "The final push before Stourbridge! Many boat owners like to gather around here for a pit-stop and fishing!",
+      icon: "assets/images/stourbridge/tow-path.jpg",
     }];
 
    var mapOptions = {
@@ -85,15 +114,10 @@ function initMap() {
       google.maps.event.addListener(marker, "click", function (e) {
         //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
         infoWindow.setContent(
-          "<div style = 'width:200px;min-height:70px'>" + data.title + "</div>"
+          "<div style = 'width:100%;min-height:30px;font-weight:bold;'>" + data.title + "</div>" + data.description 
         );
         infoWindow.open(map, marker);
       });
     })(marker, data);
   }
-
-  //   var markerCluster = new MarkerClusterer(map, markers, {
-  //     imagePath:
-  //       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  //   });
 }
