@@ -14,20 +14,20 @@ function initMap() {
       lat: "52.4689",
       lng: "-2.148731",
       description:
-        'To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a> <img style="width:100%;height:20%;float:left;" src="assets/images/glass-cone1.jpg"></img>',
+        '<p>To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/glass-cone1.jpg"></img>',
     },
     {
       title: "Dudley No.2 Path",
       lat: "52.51867",
       lng: "-2.07391",
       description:
-        'To find out more about the Dudley No.2 Path, <a href="dudley-no2-path.html">click here!</a> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2-path.jpg"></img> ',
+        '<p>To find out more about the Dudley No.2 Path, <a href="dudley-no2-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2-path.jpg"></img> ',
     },
     {
       title: "Dudley No.1 Path",
       lat: "52.49341",
       lng: "-2.06903",
-      description: 'To find out more about the Dudley No.1 Path, <a href="dudley-no1-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/waterfront.jpg"></img>',
+      description: '<p>To find out more about the Dudley No.1 Path, <a href="dudley-no1-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/waterfront.jpg"></img>',
     },
   ];
 
