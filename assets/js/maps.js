@@ -8,32 +8,26 @@ function initMap() {
   });
 
   var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
+  
   var markers = [{
       title: "Stourbridge Canal",
       lat: "52.4689",
       lng: "-2.148731",
       description:
-        "To find out more about the Stourbridge Canal, click here!",
-      icon: "assets/images/glass-cone1.jpg",
-      url: "stourbridge-path.html",
+        'To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a> <img style="width:100%;height:20%;float:left;" src="assets/images/glass-cone1.jpg"></img>',
     },
     {
       title: "Dudley No.2 Path",
       lat: "52.51867",
       lng: "-2.07391",
       description:
-        "To find out more about the Dudley No.2 Path, click here!",
-      icon: "assets/images/dudley-2-path.jpg",
-      url: "dudley-no2-path.html",
+        'To find out more about the Dudley No.2 Path, <a href="dudley-no2-path.html">click here!</a> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2-path.jpg"></img> ',
     },
     {
-      icon: "assets/images/waterfront.jpg",
       title: "Dudley No.1 Path",
       lat: "52.49341",
       lng: "-2.06903",
-      description: "To find out more about the Dudley No.1 Path, click here!",
-      url: "dudley-no1-path.html"
+      description: 'To find out more about the Dudley No.1 Path, <a href="dudley-no1-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/waterfront.jpg"></img>',
     },
   ];
 
@@ -63,7 +57,7 @@ function initMap() {
       google.maps.event.addListener(marker, "click", function (e) {
         //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
         infoWindow.setContent(
-          "<div style = 'width:100%;min-height:30px;font-weight:bold;'>" + data.title + "</div>" + data.description 
+          "<div style = 'width:100%;min-height:80px;'>" + "<div style = 'font-weight:bold;'>" + data.title + "</div>" + data.description + "</div>"
         );
         infoWindow.open(map, marker);
       });
