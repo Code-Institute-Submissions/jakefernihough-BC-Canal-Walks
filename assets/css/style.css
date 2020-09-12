@@ -325,12 +325,13 @@ div#map {min-height: 360px;}
     margin-bottom: -7%;
 }
 .contact-form h3 {
-    text-align: center;
-    color: #990808
+    text-align: left;
+    color: #990808;
+    
 }
 .contact-form h4{
     margin-top: 5%;
-    margin-bottom: 8%;
+    margin-bottom: 3%;
     text-align: center;
     color: #990808;
 }
