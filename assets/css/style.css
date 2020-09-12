@@ -34,7 +34,7 @@ body {
 }
 
 .dropdown-menu {
-    background-color: #170101
+    background-color: green;
 }
 
 .dropdown-item {
@@ -86,7 +86,7 @@ body {
     padding-top: 20px;
     background-color: rgba(153, 8, 8);
     padding-bottom: 20px;
-    
+    border-top: green 3px solid;
 }
 
 .history-title h2 {
@@ -145,7 +145,7 @@ body {
   height: 100%;
 }
 
-.text p {
+.overlay p {
   color: white;
   font-size: 10px;
   position: absolute;
@@ -167,7 +167,7 @@ body {
 
 .footer-links {
     text-align: center;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .footer-links h3 {
@@ -191,22 +191,35 @@ div#map {min-height: 360px;}
 
 #section-map {
     border-top: 2px green solid;
-    background-color: #e3dcdc;
+    background-color: #e3dcdc;;
 }
 
 .section-column {
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .section-column h3 {
     font-family: 'Libre Baskerville', 'sarif';
     font-size: 30px;
-    text-decoration: underline;
+    text-decoration: underline green;
     text-align: center;
-    color: #400909;
-    padding-bottom: 10px;
+    color: #990808;
+    padding-bottom: 20px;
+    text-transform: uppercase;
 }
+
+.map-icon {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.map-icon i {
+    font-size: 90px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: #292b29;
+}
+
 
     /* ---------- Stourbridge Path */
 
@@ -229,7 +242,7 @@ div#map {min-height: 360px;}
 #path-facts {
     background-color: rgba(153, 8, 8);
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     border-top: 2px solid green;
 }
 
@@ -247,10 +260,25 @@ div#map {min-height: 360px;}
     text-align: left;
 }
 
+.fact-image {
+    padding-bottom: 10px;
+}
 .fact-image img {
-    border: solid white 2px;
+    border: solid green 4px;
+    height: 400px;
+    width: 100%;
 }
 
+.fact-icon {
+    text-align: center;
+}
+
+.fact-icon i {
+    font-size: 90px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: #636e66;
+}
 
 
      /* ---------- Dudley No1 Path */
@@ -305,6 +333,26 @@ div#map {min-height: 360px;}
 
 #contact {
     background-color: #e3dcdc;
+    border-top: green solid 3px;
+}
+
+.contact-message {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.contact-message i {
+    font-size: 90px;
+    text-align: center;
+    padding-top: 10px;
+    color: #3b403c;
+}
+
+.contact-message p {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    color:#990808;
 }
 
    /* ------ Contact Form created by Bootstrap 4.1.1 Snippet by kshiti06 / https://bootsnipp.com/snippets/7nmOW ---- */
@@ -328,14 +376,8 @@ div#map {min-height: 360px;}
     margin-top: 10px;
     text-align: left;
     color: #990808;
-    
 }
-.contact-form h4{
-    margin-top: 5%;
-    margin-bottom: 3%;
-    text-align: center;
-    color: #990808;
-}
+
 .contact-form .btnContact {
     width: 50%;
     border: none;
