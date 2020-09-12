@@ -170,7 +170,7 @@ body {
     padding-top: 10px;
 }
 
-.footer-links h3 {
+.footer-links p {
     font-size: 11px;
     font-family:'Libre Baskerville', serif;
 }
@@ -331,7 +331,7 @@ div#map {min-height: 360px;}
   float: left;
 }
 
-#contact {
+.contact-section {
     background-color: #e3dcdc;
     border-top: green solid 3px;
 }
@@ -348,7 +348,7 @@ div#map {min-height: 360px;}
     color: #3b403c;
 }
 
-.contact-message p {
+.contact-message h2 {
     text-align: center;
     padding-top: 40px;
     font-size: 30px;
