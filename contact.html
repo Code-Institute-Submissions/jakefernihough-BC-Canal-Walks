@@ -50,9 +50,11 @@
             </div>
         </section>
         <section id="contact"> <!--Contact Form-->
-            <div class="container contact-form"> <!--Contact Form--> <!--https://bootsnipp.com/snippets/7nmOW / Bootstrap 4.1.1 Snippet by kshiti06-->
-            <h3>If you have any questions about the canals, or would like any information on events happening,</h3>
+          <div>
+                      <h3>If you have any questions about the canals, or would like any information on events happening,</h3>
                 <h4>Drop Us a Message</h4>
+          </div>
+            <div class="container contact-form"> <!--Contact Form--> <!--https://bootsnipp.com/snippets/7nmOW / Bootstrap 4.1.1 Snippet by kshiti06-->
             <form onsubmit="return sendMail(this);">
                <div class="row">
                     <div class="col-md-6">
@@ -63,12 +65,12 @@
                             <input type="text" name="email" id="emailaddress" class="form-control" placeholder="Email Address" value="" required/>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btnContact" value="Send" required/>
+                            <input type="submit" class="btnContact" value="Send"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea name="informationsummary" id="projectsummary" class="form-control" placeholder="Your Message" style="width: 100%; height: 150px;"></textarea>
+                            <textarea name="informationsummary" id="informationsummary" class="form-control" placeholder="Your Message" style="width: 100%; height: 150px;" required></textarea>
                         </div>
                     </div>
                 </div>
