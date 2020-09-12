@@ -1,6 +1,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
-   /* HTML */
+        /* ---- HTML ---- */
 
    * {
     box-sizing: border-box;
@@ -22,11 +22,11 @@ body {
     min-height: 100vh; 
     overflow: hidden;
     display: block;
-    padding-bottom: 100px; 
 }
 
     
-    /*---------- Nav Bar */
+       /*---------- Nav Bar ----- */
+
 .navbar {
     background-color: #990808;
     font-family: 'Libre Baskerville', serif;
@@ -42,8 +42,8 @@ body {
 }
 
 
-    /*---------- Index.html */
-       /* ---------- Header */
+    /*---------- Index.html -------- */
+       /* ---------- Header -------*/
 
 #index-header {
     height: 500px;
@@ -80,7 +80,7 @@ body {
 }
 
 
-/* ---------- History */
+    /* ---------- History ------- */
 
 #history {
     padding-top: 20px;
@@ -104,10 +104,13 @@ body {
     padding-left: 6px;
     font-family: 'Libre Baskerville', serif;
     color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-shadow: 2px 2px black;
 }
 
 .history-intro a {
-    text-decoration: underline;
+    text-decoration: underline green;
     color: white;
 }
 
@@ -118,14 +121,6 @@ body {
 .container { /* created by https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp */
   position: relative;
   width: 100%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  opacity: 80%;
-  padding-top: 10px;
 }
 
 .overlay {
@@ -157,71 +152,7 @@ body {
   text-align: center;
 }
 
-
-   /* -------- FOOTER ---------- */
-
-#footer {
-    background-color: #fff;
-    border-top: green 3px solid;
-}
-
-.footer-links {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.footer-links p {
-    font-size: 11px;
-    font-family:'Libre Baskerville', serif;
-}
-
-.footer-links ul li a {
-    color: red;
-    text-decoration: none;
-}
-
-.footer-links ul li a:hover {
-    color: green;
-}
-
-
-     /* --------- MAP */
-
-div#map {min-height: 360px;}
-
-#section-map {
-    border-top: 2px green solid;
-    background-color: #e3dcdc;;
-}
-
-.section-column {
-    padding-bottom: 20px;
-}
-
-.section-column h3 {
-    font-family: 'Libre Baskerville', 'sarif';
-    font-size: 30px;
-    text-decoration: underline green;
-    text-align: center;
-    color: #990808;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.map-icon {
-    text-align: center;
-    padding-top: 30px;
-}
-
-.map-icon i {
-    font-size: 90px;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    color: #292b29;
-}
-
-
-    /* ---------- Stourbridge Path */
+    /* ---------- Stourbridge Path ------- */
 
 .stourbridge-module {
   background: 
@@ -230,6 +161,38 @@ div#map {min-height: 360px;}
       rgba(0, 0, 0, 0.6)
     ),
     url(../images/sbridge-canal.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  float: left;
+}
+
+     /* ---------- Dudley No1 Path ---------- */
+
+.dudley1-module {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/dud1-path.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  float: left;
+}
+
+     /* ---------- Dudley no2 Path */
+
+.dudley2-module {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/dudley-2-path.jpg);
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -280,39 +243,40 @@ div#map {min-height: 360px;}
     color: #636e66;
 }
 
+     /* --------- MAP ------ */
 
-     /* ---------- Dudley No1 Path */
+div#map {min-height: 360px;}
 
-.dudley1-module {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../images/dud1-path.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  position: relative;
-  float: left;
+#section-map {
+    border-top: 3px green solid;
+    background-color: #e3dcdc;;
 }
 
-     /* ---------- Dudley no2 Path */
-
-.dudley2-module {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../images/dudley-2-path.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  position: relative;
-  float: left;
+.section-column {
+    padding-bottom: 20px;
 }
 
+.section-column h3 {
+    font-family: 'Libre Baskerville', 'sarif';
+    font-size: 30px;
+    text-decoration: underline green;
+    text-align: center;
+    color: #990808;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.map-icon {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.map-icon i {
+    font-size: 90px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: #292b29;
+}
 
 
    /* ----------- CONTACT ---- */
@@ -388,6 +352,10 @@ div#map {min-height: 360px;}
     color: #fff;
     cursor: pointer;
 }
+
+.btnContact:hover {
+   background-color: green;
+}
 .btnContactSubmit
 {
     width: 50%;
@@ -397,4 +365,39 @@ div#map {min-height: 360px;}
     background-color: #990808;
     border: none;
     cursor: pointer;
+}
+
+   /* -------- FOOTER ---------- */
+
+#footer {
+    background-color: #990808;;
+    border-top: green 3px solid;
+}
+
+.footer-links {
+    text-align: center;
+    padding-top: 10px;
+    border-right: #fff 1px solid;
+}
+
+.footer-links li {
+    font-size: 11px;
+    font-family:'Libre Baskerville', serif;
+    color: #fff;
+    
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: green;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
 }
