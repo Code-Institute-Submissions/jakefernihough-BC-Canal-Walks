@@ -13,7 +13,7 @@ function initMap() { //main map view
       lat: "52.4689",
       lng: "-2.148731",
       description:
-        '<p>To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/glass-cone1.jpg"></img>',
+        '<p>To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/stourbridge/glass-cone1.jpg"></img>',
     },
     {
       title: "Dudley No.2 Path",
