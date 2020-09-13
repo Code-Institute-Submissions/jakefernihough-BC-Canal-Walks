@@ -1,4 +1,4 @@
-function initMap() {
+function initMap() { //main map view
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
     center: {
@@ -7,8 +7,7 @@ function initMap() {
     },
   });
 
-  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-  
+      // markers
   var markers = [{
       title: "Stourbridge Canal",
       lat: "52.4689",
@@ -41,7 +40,7 @@ function initMap() {
   };
 
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  //Create and open InfoWindow.
+  //InfoWindow.
   var infoWindow = new google.maps.InfoWindow();
   for (var i = 0; i < markers.length; i++) {
     var data = markers[i];
@@ -52,10 +51,9 @@ function initMap() {
       title: data.title,
     });
 
-    //Attach click event to the marker.
+    //click event to the marker.
     (function (marker, data) {
       google.maps.event.addListener(marker, "click", function (e) {
-        //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
         infoWindow.setContent(
           "<div style = 'width:100%;min-height:80px;'>" + "<div style = 'font-weight:bold;'>" + data.title + "</div>" + data.description + "</div>"
         );
