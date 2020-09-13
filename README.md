@@ -231,7 +231,7 @@ Jake Fernihough © 2020. All rights reserved.
 * A thank you to the [Slack Community](https://app.slack.com/client/T0L30B202/threads), who helped me in my time of needs during this project.
 * Shout out to [Lewis Church](https://www.linkedin.com/in/lewis-church-a29b077/), who was the man that got me into starting this course.
 * A very big thank you to my friend Lydia, who helped accompany me on all of the canal walks, gave me an idea about how to present the web page and also checking for any faults in the code.
-* A thank you to my Father, who helped teach me a bit about the history of the canals.
+* A thank you to my Parents, who helped teach me a bit about the history of the canals.
 * Lastly, but certainly not least, The person who has guided me through this journey and this creation.
  Helping me whenever the chance came and being an absolute star mentor, I can not thank 
  [Adegbenga Adeye](https://www.linkedin.com/in/adegbenga-adeye-14003635/) enough for what he has done to help me.
