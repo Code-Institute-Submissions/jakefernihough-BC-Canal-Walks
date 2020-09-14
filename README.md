@@ -132,6 +132,8 @@ Underneath the map is a link back to the main page map displaying the 3 paths av
      * If the user does not fill out the Message input, the form will request to fill it out before submitting request.
 
      * Once you have submitted with all fields filled out, the Console should read _Success_ if successful, or _Failure_ if there is an error.
+     
+     * You should receieve an alert box saying 'Message Recieved' if successful.
 
      * You should receieve an automated reply to the email used to send coming from the website email.
 

@@ -58,8 +58,8 @@ const dudley1 = [{
       lng: "-2.06357",
       description:
         '<p>Another aged transportation system ran close to the original transportation system of the old black country!</p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-1/railline.jpg"></img>',
-    }];
-    dudley2 = [{ // Dudley 2
+    }]
+const dudley2 = [{ // Dudley 2
       title: "Blowers Green Pump House",
       lat: "52.49824",
       lng: "-2.09684",
@@ -143,8 +143,8 @@ const dudley1 = [{
       lng: "-2.06903",
       description:
         '<p>Come see the last ever canal tunnel to be built in the UK! bring a torch!</p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2/tunnel-netherton.jpg"></img>',
-    }];
-    stourbridge = [{  // Stourbridge
+    }]
+const stourbridge = [{  // Stourbridge
       title: "Buckpool Nature Reserve",
       lat: "52.48121",
       lng: "-2.14528",
@@ -211,11 +211,9 @@ const dudley1 = [{
       description:
         '<p>The final push before Stourbridge! Many boat owners like to gather around here for a pit-stop and fishing!</p> <img style="width:100%;height:20%;float:left;" src="assets/images/stourbridge/tow-path.jpg"></img>',
     }];
-
-
     
 let markers;
-// *
+
 function initMap() { //main map view
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
@@ -226,11 +224,16 @@ function initMap() { //main map view
   });
 
       // markers
+    console.log(window.location);
     if (window.location.contains("dudley1.html") ){
-        markers = dudley1
+        markers = dudley1;
+    } else if (window.location.contains("dudley2.html") ){
+        markers = dudley2;
+    } else if (window.location.contains("stourbridge-path.html") ){
+        markers = stourbridge;
     }
 
-//*
+
   var mapOptions = {
     center: new google.maps.LatLng(
       parseFloat(markers[0].lat),
@@ -239,7 +242,7 @@ function initMap() { //main map view
     zoom: 10,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
   };
-//*
+
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
   //InfoWindow.
   var infoWindow = new google.maps.InfoWindow();
