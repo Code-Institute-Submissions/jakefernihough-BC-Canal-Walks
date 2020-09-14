@@ -121,6 +121,16 @@ This was a constant use of mine throughout my development. More information [her
 When the page has loaded, it shall have the google maps showing with markers around the Dudley/ Stourbridge area. Selecting a _Map Marker_ will
 open up an InfoWindow showing a title of the image with a brief description and an image.
 Underneath the map is a link back to the main page map displaying the 3 paths available.
+  * on the console, the maps say it has 2 errors, "js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap:70 InvalidValueError: setCenter:
+   not a LatLng or LatLngLiteral with finite coordinates: in property lat: not a number"
+   and...
+   "Uncaught (in promise) TypeError: Cannot read property '0' of undefined
+    at initMap (pathMaps.js:261)
+    at js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap:143
+    at js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap:143"
+
+    * I attempted to fix or see where the issue was coming from, to no success. However the map loads exactly
+    how I wanted it to. As well as other testers. So I can't see it being a huge deal that would break the site.
 
 2. **Contact Form** - Click on the Contact Page either on the Header, or the Footer.
 
