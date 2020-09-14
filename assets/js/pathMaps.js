@@ -1,4 +1,25 @@
-const dudley1 = [{
+const index = [{
+      title: "Stourbridge Canal",
+      lat: "52.4689",
+      lng: "-2.148731",
+      description:
+        '<p>To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/stourbridge/glass-cone1.jpg"></img>',
+    },
+    {
+      title: "Dudley No.2 Path",
+      lat: "52.51867",
+      lng: "-2.07391",
+      description:
+        '<p>To find out more about the Dudley No.2 Path, <a href="dudley2.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2-path.jpg"></img> ',
+    },
+    {
+      title: "Dudley No.1 Path",
+      lat: "52.49341",
+      lng: "-2.06903",
+      description: '<p>To find out more about the Dudley No.1 Path, <a href="dudley2.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/waterfront.jpg"></img>',
+    },
+  ];
+ dudley1 = [{
       title: "Delph Locks",
       lat: "52.4777",
       lng: "-2.1191",
@@ -58,8 +79,8 @@ const dudley1 = [{
       lng: "-2.06357",
       description:
         '<p>Another aged transportation system ran close to the original transportation system of the old black country!</p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-1/railline.jpg"></img>',
-    }]
-const dudley2 = [{ // Dudley 2
+    }],
+ dudley2 = [{ // Dudley 2
       title: "Blowers Green Pump House",
       lat: "52.49824",
       lng: "-2.09684",
@@ -143,8 +164,8 @@ const dudley2 = [{ // Dudley 2
       lng: "-2.06903",
       description:
         '<p>Come see the last ever canal tunnel to be built in the UK! bring a torch!</p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2/tunnel-netherton.jpg"></img>',
-    }]
-const stourbridge = [{  // Stourbridge
+    }],
+ stourbridge = [{  // Stourbridge
       title: "Buckpool Nature Reserve",
       lat: "52.48121",
       lng: "-2.14528",
@@ -224,12 +245,13 @@ function initMap() { //main map view
   });
 
       // markers
-    console.log(window.location);
-    if (window.location.contains("dudley1.html") ){
+    if (window.location.pathname.indexOf("index.html") != -1){
+        markers = index;
+    } else if (window.location.pathname.indexOf("dudley1.html") != -1){
         markers = dudley1;
-    } else if (window.location.contains("dudley2.html") ){
+    } else if (window.location.pathname.indexOf("dudley2.html") != -1){
         markers = dudley2;
-    } else if (window.location.contains("stourbridge-path.html") ){
+    } else if (window.location.pathname.indexOf("stourbridge-path.html") != -1){
         markers = stourbridge;
     }
 
