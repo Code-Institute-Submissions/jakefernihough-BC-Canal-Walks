@@ -15,9 +15,12 @@ function sendMail(contactForm) {
             emailInput.value='',
             informationsummaryInput.value='',
             console.log("SUCCESS", response);
+            location.reload()
+            window.alert("Message Recieved!");
         },
         function(error) {
             console.log("FAILED", error);
+            window.alert("So Sorry! Something went wrong! please try again.");
         });
         
     return false;
