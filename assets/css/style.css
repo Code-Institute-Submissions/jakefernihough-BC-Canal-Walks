@@ -27,10 +27,13 @@ body {
     
        /*---------- Nav Bar ----- */
 
+.navbar-brand {
+    font-size: 0.85rem;
+}
+
 .navbar {
     background-color: #990808;
     font-family: 'Libre Baskerville', serif;
-    font-size: 15px;
 }
 
 .dropdown-menu {
@@ -84,7 +87,7 @@ body {
 
 #history {
     padding-top: 20px;
-    background-color: rgba(153, 8, 8);
+    background-color:#474343;
     padding-bottom: 20px;
     border-top: green 3px solid;
 }
@@ -93,7 +96,6 @@ body {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     color: white;
-    background-color: rgb(153, 8, 8);
     text-decoration: underline green;
     text-shadow: 3px 2px 2px #170101;
     font-size: 35px;
@@ -123,7 +125,7 @@ body {
   width: 100%;
 }
 
-.overlay {
+.boat-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -136,12 +138,11 @@ body {
   opacity: 70%;
 }
 
-.container:hover .overlay {
+.container:hover .boat-overlay {
   height: 100%;
 }
 
-
-.overlay img {
+.boat-overlay img {
   color: white;
   font-size: 10px;
   position: absolute;
@@ -153,7 +154,49 @@ body {
   text-align: center;
 }
 
-.overlay p {
+.boat-overlay p {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.locks-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .7s ease;
+  opacity: 70%;
+}
+
+.container-fluid:hover .locks-overlay {
+  height: 100%;
+}
+
+
+.locks-overlay img {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.locks-overlay p {
   color: white;
   font-size: 10px;
   text-align: center;
@@ -216,7 +259,7 @@ body {
     /* ----------- PATH FACTS ----- */
 
 #path-facts {
-    background-color: rgba(153, 8, 8);
+    background-color: #474343;
     padding-top: 20px;
     padding-bottom: 60px;
     border-top: 2px solid green;
@@ -253,7 +296,7 @@ body {
     font-size: 90px;
     padding-top: 10px;
     padding-bottom: 40px;
-    color: #636e66;
+    color: #fff;
 }
 
      /* --------- MAP ------ */
@@ -323,7 +366,7 @@ div#map {min-height: 360px;}
 }
 
 .contact-section {
-    background-color: #e3dcdc;
+    background-color: #474343;
     border-top: green solid 3px;
 }
 
@@ -336,21 +379,20 @@ div#map {min-height: 360px;}
     font-size: 90px;
     text-align: center;
     padding-top: 10px;
-    color: #3b403c;
+    color: #fff;
 }
 
 .contact-message h2 {
     text-align: center;
     padding-top: 40px;
     font-size: 30px;
-    color:#990808;
+    color:#fff;
 }
 
    /* ------ Contact Form created by Bootstrap 4.1.1 Snippet by kshiti06 / https://bootsnipp.com/snippets/7nmOW ---- */
 .contact-form{
-    background: #e3dcdc;
+    background: #474343;
     margin-top: 3px;
-    margin-bottom: 3px;
     width: 70%;
 }
 .contact-form .form-control{
@@ -397,7 +439,7 @@ div#map {min-height: 360px;}
    /* -------- FOOTER ---------- */
 
 #footer {
-    background-color: #990808;;
+    background-color: #fff;
     border-top: green 3px solid;
 }
 
@@ -406,8 +448,6 @@ div#map {min-height: 360px;}
     padding-top: 15px;
     padding-right: 3px;
     padding-left: 3px;
-    border-right: #fff 1px solid;
-    border-left: #fff 1px solid;
 }
 
 .footer-links li {
@@ -418,7 +458,7 @@ div#map {min-height: 360px;}
 }
 
 .footer-links ul li a {
-    color: #fff;
+    color: #990808;
     text-decoration: none;
     font-size: 15px;
     padding-top: 5px;
@@ -431,5 +471,5 @@ div#map {min-height: 360px;}
 .copyright {
     text-align: center;
     font-size: 10px;
-    color: #fff;
+    color: grey;
 }

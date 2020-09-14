@@ -33,25 +33,25 @@
       <div class="main-container">
         <!-- Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark">
-        <!-- Navbar credited to https://bootsnipp.com/snippets/nNWr8 by vosidiy-->
-            <a class="navbar-brand" href="#"> <img class="logo" src="assets/images/bcflag.jpg" alt="flag" height="28"> CANAL WALK GUIDE</a>
+            <!-- Navbar credited to https://bootsnipp.com/snippets/nNWr8 by vosidiy-->
+            <a class="navbar-brand" href="index.html"> <img class="logo" src="assets/images/bcflag.jpg" alt="flag" height="28"> CANAL WALK GUIDE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>  <!--Home-->
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home<span class="sr-only">(current)</span> </a></li>  <!--Home-->
                     <li class="nav-item"><a class="nav-link" href="index.html#history">History</a></li> <!--History-->
                     <li class="nav-item"><a class="nav-link" href="index.html#map">Map</a></li> <!--Map-->
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Paths</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="stourbridge-path.html">Stourbridge</a></li> <!--Stourbridge-->
-                    <li><a class="dropdown-item" href="dudley-no1-path.html">Dudley No.1</a></li>  <!--Dudley No.1 Path-->
-                    <li><a class="dropdown-item" href="dudley-no2-path.html">Dudley No.2</a></li>  <!--Dudley No.2 Path-->
-                </ul>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="stourbridge-path.html">Stourbridge</a></li> <!--Stourbridge-->
+                            <li><a class="dropdown-item" href="dudley1.html">Dudley No.1</a></li>  <!--Dudley No.1 Path-->
+                            <li><a class="dropdown-item" href="dudley2.html">Dudley No.2</a></li>  <!--Dudley No.2 Path-->
+                        </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span> </a></li>  <!--Contact Page-->
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>  <!--Contact Page-->
                 </ul>
             </div>
         </nav>
@@ -73,6 +73,7 @@
             </div>
             <div class="container contact-form"> <!--Contact Form--> <!--https://bootsnipp.com/snippets/7nmOW / Bootstrap 4.1.1 Snippet by kshiti06-->
                 <form onsubmit="return sendMail(this);">
+                  <div id="recieved"></div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group"> <!--Name-->

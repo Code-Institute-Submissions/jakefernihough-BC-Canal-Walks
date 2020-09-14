@@ -20,13 +20,13 @@ function initMap() { //main map view
       lat: "52.51867",
       lng: "-2.07391",
       description:
-        '<p>To find out more about the Dudley No.2 Path, <a href="dudley-no2-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2-path.jpg"></img> ',
+        '<p>To find out more about the Dudley No.2 Path, <a href="dudley2.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2-path.jpg"></img> ',
     },
     {
       title: "Dudley No.1 Path",
       lat: "52.49341",
       lng: "-2.06903",
-      description: '<p>To find out more about the Dudley No.1 Path, <a href="dudley-no1-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/waterfront.jpg"></img>',
+      description: '<p>To find out more about the Dudley No.1 Path, <a href="dudley2.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/waterfront.jpg"></img>',
     },
   ];
 
