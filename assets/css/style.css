@@ -322,6 +322,14 @@ div#map {min-height: 360px;}
     text-transform: uppercase;
 }
 
+.section-heading  {
+    font-family: 'Libre Baskerville', 'sarif';
+    font-size: 15px;
+    text-align: center;
+    color: #990808;
+    padding-bottom: 5px;
+}
+
 .map-icon {
     text-align: center;
     padding-top: 30px;
@@ -400,7 +408,8 @@ div#map {min-height: 360px;}
 }
 
 .contact-form form{
-    padding: 14%;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 .contact-form form .row{
     margin-bottom: -7%;
@@ -434,6 +443,12 @@ div#map {min-height: 360px;}
     background-color: #990808;
     border: none;
     cursor: pointer;
+}
+
+.contact-request {
+    color: #e3dcdc;
+    font-size: 20px; 
+    margin-top: 30px;
 }
 
    /* -------- FOOTER ---------- */

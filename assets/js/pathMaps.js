@@ -3,14 +3,14 @@ const index = [{
       lat: "52.4689",
       lng: "-2.148731",
       description:
-        '<p>To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/stourbridge/glass-cone1.jpg"></img>',
+        '<p>To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a></p> <img style="width:200px;height:200px;float:left;" src="assets/images/stourbridge/glass-cone1.jpg"></img>',
     },
     {
       title: "Dudley No.2 Path",
       lat: "52.51867",
       lng: "-2.07391",
       description:
-        '<p>To find out more about the Dudley No.2 Path, <a href="dudley2.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2-path.jpg"></img> ',
+        '<p>To find out more about the Dudley No.2 Path, <a href="dudley2.html">click here!</a></p> <img style="width:100%;height:20%;float:center;" src="assets/images/dudley-2-path.jpg"></img> ',
     },
     {
       title: "Dudley No.1 Path",
@@ -121,7 +121,7 @@ const index = [{
       lat: "52.48332",
       lng: "-2.09214",
       description:
-        '<p>The centre piece to the No.2 Path is the amazing Resevoir! A fantastic day trip filled with water activities for the family!</p>  <img style="width:100%;height:20%;float:left;" src="images/assets/dudley-2/netherton-resevoir.jpg"></img>',
+        '<p>The centre piece to the No.2 Path is the amazing Resevoir! A fantastic day trip filled with water activities for the family!</p>  <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2/netherton-resevoir.jpg"></img>',
     }, {
       title: "Chain History Sign",
       lat: "52.483",
@@ -235,12 +235,12 @@ const index = [{
     
 let markers;
 
-function initMap() { //main map view
+function initMap() { //main map view - code insired by the User-Centric module from Code Institute
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
     center: {
-      "lat": "52.4689",
-      "lng": "-2.148731",
+      lat: "52.4689",
+      lng: "-2.148731",
     },
   });
 
@@ -261,7 +261,7 @@ function initMap() { //main map view
       parseFloat(markers[0].lat),
       parseFloat(markers[0].lng)
     ),
-    zoom: 10,
+    zoom: 11,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
   };
 
@@ -281,7 +281,7 @@ function initMap() { //main map view
     (function (marker, data) {
       google.maps.event.addListener(marker, "click", function (e) {
         infoWindow.setContent(
-           "<div style = 'width:100%;min-height:80px;'>" + "<div style = 'font-weight:bold;'>" + data.title + "</div>" + data.description + "</div>" 
+           "<div style = 'width:100%;height:100%;'>" + "<div style = 'font-weight:bold;'>" + data.title + "</div>" + data.description + "</div>" 
         );
         infoWindow.open(map, marker);
       });
