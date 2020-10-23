@@ -233,33 +233,37 @@ const index = [{
         '<p>The final push before Stourbridge! Many boat owners like to gather around here for a pit-stop and fishing!</p> <img style="width:100%;height:20%;float:left;" src="assets/images/stourbridge/tow-path.jpg"></img>',
     }];
     
-let markers;
+let markers = [];
+
+// TO BE COMPLETED - Console error "InvalidValueError: setCenter: not a LatLng or LatLngLiteral with finite coordinates: in property lat: not a number"
+                 // - Image size for infowindow needs to fit better.
+                 // - markers for "index.html" as i need to reload the page to have /index.html in order to work properly.
 
 function initMap() { //main map view - code insired by the User-Centric module from Code Institute
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 11,
-    center: {
-      lat: "52.4689",
-      lng: "-2.148731",
-    },
-  });
+  var map = new google.maps.Map(document.getElementById("map"));
+//    {
+//     zoom: 11,
+//     center: {
+//       lat: "52.4689",
+//       lng: "-2.148731",
+//     },
+//   });
 
-      // markers
-    if (window.location.pathname.indexOf("index.html") != -1){
+    // markers
+    if (window.location.pathname.indexOf("index.html") != -1){ //Needs fixing
         markers = index;
-    } else if (window.location.pathname.indexOf("dudley1.html") != -1){
+    } else if (window.location.pathname.indexOf("/dudley1.html") != -1){
         markers = dudley1;
-    } else if (window.location.pathname.indexOf("dudley2.html") != -1){
+    } else if (window.location.pathname.indexOf("/dudley2.html") != -1){
         markers = dudley2;
-    } else if (window.location.pathname.indexOf("stourbridge-path.html") != -1){
+    } else if (window.location.pathname.indexOf("/stourbridge-path.html") != -1){
         markers = stourbridge;
     }
 
-
   var mapOptions = {
     center: new google.maps.LatLng(
-      parseFloat(markers[0].lat),
-      parseFloat(markers[0].lng)
+      markers[0].lat,
+      markers[0].lng
     ),
     zoom: 11,
     mapTypeId: google.maps.MapTypeId.ROADMAP,

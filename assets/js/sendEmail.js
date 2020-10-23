@@ -2,7 +2,7 @@ let nameInput = document.getElementById("fullname");
 let emailInput = document.getElementById("emailaddress");
 let informationsummaryInput = document.getElementById("informationsummary");
 
-// Code inspired and designed around the Code Institute User-Centric module of Emailjs
+// Code inspired and designed around the Code Institute User-Centric-Frontend module of Emailjs
 function sendMail(contactForm) {
     emailjs.send("gmail","template_1b5075x", {
         "from_name": contactForm.name.value,
