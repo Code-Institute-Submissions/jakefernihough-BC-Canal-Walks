@@ -104,19 +104,19 @@
                 </div>
             </div>
         </section>
-        <section id="section-map" class="container-fluid"> <!--Map-->
-            <div class="map-icon">
-                <i class="fas fa-map-marker-alt"></i> <!--Maps Icon-->
-            </div>
-            <div class="row">
-                <div class="col-md-12 section-column">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="uppercase">Black Country Canal Map</h3> <!--Maps Title-->
-                            <p class="section-heading ">Please select a marker on the map below to choose your Canal Walk destination! </p>
-                        </div>
-                    </div>
-                    <div id="map"></div> <!--Google Maps API-->
+        <section class="path-choice" id="map"> <!-- Influenced from https://bootsnipp.com/snippets/M5gZB "Zoome Image On Mouse Over" by aungnainghtay-->
+            <div class="container">
+              <h2 class="path-header">Select a path to find out more information</h2>
+                <div class="row">
+	                <div class="col-sm-4">
+	                    <div class="item"><a href="stourbridge-path.html"><h3>Stourbridge Canal</h3><img src="assets/images/sbridge-canal.jpg" class="img-thumbnail"></a></div>
+		            </div>
+	                <div class="col-sm-4">
+		                <div class="item"><a href="dudley1.html"><h3>DUDLEY No.1 Path</h3><img src="assets/images/dud1-path.jpg" class="img-thumbnail"></a></div>
+	                </div>
+	                <div class="col-sm-4">
+		                <div class="item"><a href="dudley2.html"><h3>DUDLEY No.2 Path</h3><img src="assets/images/dudley-2-path.jpg" class="img-thumbnail"></a></div>
+	                </div>
                 </div>
             </div>
         </section>
@@ -159,10 +159,6 @@
                 </div>
             </div>
         </footer>
-      <!--Link to Javascript Maps API-->
-      <script src="assets/js/pathMaps.js"></script>
-      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBxXtEZTGwmahB77PhCYY9r6dNZUPLBqo&callback=initMap"></script>
       <!-- JS, Popper.js, and jQuery -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <!--Link to code to allow navbar to form into a hamburger icon and open up to links-->

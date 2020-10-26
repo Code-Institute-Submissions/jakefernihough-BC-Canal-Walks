@@ -1,25 +1,4 @@
-const index = [{
-      title: "Stourbridge Canal",
-      lat: "52.4689",
-      lng: "-2.148731",
-      description:
-        '<p>To find out more about the Stourbridge Canal, <a href="stourbridge-path.html">click here!</a></p> <img style="width:200px;height:200px;float:left;" src="assets/images/stourbridge/glass-cone1.jpg"></img>',
-    },
-    {
-      title: "Dudley No.2 Path",
-      lat: "52.51867",
-      lng: "-2.07391",
-      description:
-        '<p>To find out more about the Dudley No.2 Path, <a href="dudley2.html">click here!</a></p> <img style="width:100%;height:20%;float:center;" src="assets/images/dudley-2-path.jpg"></img> ',
-    },
-    {
-      title: "Dudley No.1 Path",
-      lat: "52.49341",
-      lng: "-2.06903",
-      description: '<p>To find out more about the Dudley No.1 Path, <a href="dudley2.html">click here!</a></p> <img style="width:100%;height:20%;float:left;" src="assets/images/waterfront.jpg"></img>',
-    },
-  ];
- dudley1 = [{
+const dudley1 = [{
       title: "Delph Locks",
       lat: "52.4777",
       lng: "-2.1191",
@@ -235,24 +214,11 @@ const index = [{
     
 let markers = [];
 
-// TO BE COMPLETED - Console error "InvalidValueError: setCenter: not a LatLng or LatLngLiteral with finite coordinates: in property lat: not a number"
-                 // - Image size for infowindow needs to fit better.
-                 // - markers for "index.html" as i need to reload the page to have /index.html in order to work properly.
-
 function initMap() { //main map view - code insired by the User-Centric module from Code Institute
   var map = new google.maps.Map(document.getElementById("map"));
-//    {
-//     zoom: 11,
-//     center: {
-//       lat: "52.4689",
-//       lng: "-2.148731",
-//     },
-//   });
 
     // markers
-    if (window.location.pathname.indexOf("index.html") != -1){ //Needs fixing
-        markers = index;
-    } else if (window.location.pathname.indexOf("/dudley1.html") != -1){
+    if (window.location.pathname.indexOf("/dudley1.html") != -1){
         markers = dudley1;
     } else if (window.location.pathname.indexOf("/dudley2.html") != -1){
         markers = dudley2;

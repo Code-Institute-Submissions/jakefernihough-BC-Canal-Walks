@@ -208,6 +208,66 @@ body {
   transform: translate(-50%, -50%);
 }
 
+
+    /* ------ Path Choice */
+
+    /* Influenced from https://bootsnipp.com/snippets/M5gZB "Zoome Image On Mouse Over" by aungnainghtay */
+
+.path-choice {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #858181;
+    border-top: green 2px solid;
+}
+
+.item {
+    left: 0;
+    top: 0;
+    position: relative;
+    overflow: hidden;
+    margin-top:50px;
+
+}
+
+.item img {
+    -webkit-transition: 0.6s ease;
+  	transition: 0.6s ease;
+    height: 200px;
+    width: 600px;
+}
+
+.item img:hover{
+	-webkit-transform: scale(1.2);
+  	transform: scale(1.2);
+}
+
+.img-thumbnail{
+    border:0px;
+    border-radius:0px;
+}
+
+.path-header {
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    text-decoration: underline green;
+    font-size: 35px;
+    text-align: center;
+}
+
+.item a h3{
+    font-size: 15px;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item a h3:hover {
+    text-decoration: none;
+}
+
     /* ---------- Stourbridge Path ------- */
 
 .stourbridge-module {
@@ -487,4 +547,33 @@ div#map {min-height: 360px;}
     text-align: center;
     font-size: 10px;
     color: grey;
+}
+
+
+    /* ------ Path Choice */
+
+.item {
+    left: 0;
+    top: 0;
+    position: relative;
+    overflow: hidden;
+    margin-top:50px;
+
+}
+
+.item img {
+    -webkit-transition: 0.6s ease;
+  	transition: 0.6s ease;
+    height: 200px;
+    width: 600px;
+}
+
+.item img:hover{
+	-webkit-transform: scale(1.2);
+  	transform: scale(1.2);
+}
+
+.img-thumbnail{
+    border:0px;
+    border-radius:0px;
 }
