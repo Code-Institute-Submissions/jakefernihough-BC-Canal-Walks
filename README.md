@@ -55,11 +55,13 @@ attractions that they can find along the walks.
 
  **Navigation Bar** - I added the Black Country Flag to the navbar to show more about the location of the said canals.
 The menu links are across on the right. Nothing major, not in your face. When operating a smaller screen, the menu transforms into a hamburger menu
-for easier and responsive navigation.
+for easier and responsive navigation. It is fixed on the top of the screen for easier navigation of the website.
 
 **Index Page** - I wanted to create a simple design that would span over the other pages to keep it consistent and using high quality pictures.
 
 **History** - I wanted to provide a brief yet insightful introduction to the history of the canals so that viewers would want to learn more about them.
+
+**Choose Path** - Selecting the image of the path you want to learn more about.
 
 **Maps** - Using the magic of JavaScript and Google Maps, I added map markers with InfoWindows to introduce the locations to the different paths available and a link to each of the pages
 so that the viewers can learn more about the specific paths.
@@ -117,7 +119,12 @@ This was a constant use of mine throughout my development. More information [her
 
 ## Test Scenarios
 
-1. **Maps** - Found on Index/Stourbridge/Dudley No.1/Dudley No.2 Pages.
+1. **Maps** - Found on Stourbridge/Dudley No.1/Dudley No.2 Pages.
+
+_Updated_
+Google mas is no longer shown on the index.html page, due to an error in the javascript that could not be fixed due to it needing the 
+/index.html in the url. It now shows image cards in its place to direct the user to the paths they want to see.
+
 When the page has loaded, it shall have the google maps showing with markers around the Dudley/ Stourbridge area. Selecting a _Map Marker_ will
 open up an InfoWindow showing a title of the image with a brief description and an image.
 Underneath the map is a link back to the main page map displaying the 3 paths available.
@@ -131,6 +138,14 @@ Underneath the map is a link back to the main page map displaying the 3 paths av
 
     * I attempted to fix or see where the issue was coming from, to no success. However the map loads exactly
     how I wanted it to. As well as other testers. So I can't see it being a huge deal that would break the site.
+    * After testing this error, managed to fix the problem in my pathMaps.js file. There was code that overlapped and confused 
+    the console as it repeated itself, so I got rid of the unnecessary code, that in turn fixed the issue.
+    * Another problem I ran into was because I had 4 maps in the site, all showing seperate markers. The index.html map had to
+    be reloaded in order for the map to show. After reconsideration, I removed the index map as 1. Was not the best functionality 
+    and was the main cause of errors in the console and 2. It did not look professional. So I exchanged it for image cards, showing
+    the different paths to choose.
+
+    * click the box on the top right of the map to open up a larger view that will make the images more readable to the user.
 
 2. **Contact Form** - Click on the Contact Page either on the Header, or the Footer.
 
@@ -150,6 +165,7 @@ Underneath the map is a link back to the main page map displaying the 3 paths av
 3. **NavBar** - Hover over the menu titles and they should highlight dependant on what menu you're hovering over.
 
     * Click on a page (e.g Stourbridge) and it shall open up that page.
+
 
 # Deployment
 
@@ -220,6 +236,14 @@ Insert the following code in the `head` section of your pages:
 
 * **Image Overlay** on the index.html was inspired by https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp.
 
+* **Image Cards** on the index.html was inspired by https://bootsnipp.com/snippets/M5gZB "Zoome Image On Mouse Over" by aungnainghtay
+
+* **JavaScvript** The JavaScript used was heavily influenced through the [Code Institute](https://codeinstitute.net/) Full Stack Web Developer course, 
+specifically the Interactive-Frontend Module. Many thanks for the information and learning provided tohelp me finish this project.
+
+* **JSHint** - After a console error (stated above) caused problems with my JavaScript, I used JSHint to find where the problems occured,
+amd after many attempts, finally fixed the issue that was JS code was being overlapped and repeated, causing confusion for the data being presented.
+
 ### Inspirations
 
 * I took inspiration with how to provide the content from the site from the [Canal River Trust Website](https://canalrivertrust.org.uk/enjoy-the-waterways/canal-and-river-network/stourbridge-canal).
@@ -240,6 +264,7 @@ Jake Fernihough © 2020. All rights reserved.
 ## Acknowledgements
 
 * First of all, a big THANK YOU to [CodeInstitute](https://codeinstitute.net/) for teaching me everything I have learnt so far. I have come a long way because of their instructions and guidance.
+Also a big thank you for helping me through the Interactive-Frontend Module that I used heavily on influencing this project.
 * A thank you to the [Slack Community](https://app.slack.com/client/T0L30B202/threads), who helped me in my time of needs during this project.
 * Shout out to [Lewis Church](https://www.linkedin.com/in/lewis-church-a29b077/), who was the man that got me into starting this course.
 * A very big thank you to my friend Lydia, who helped accompany me on all of the canal walks, gave me an idea about how to present the web page and also checking for any faults in the code.

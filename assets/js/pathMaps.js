@@ -1,4 +1,4 @@
-const dudley1 = [{
+const dudley1 = [{ //Dudley1 locations data.
       title: "Delph Locks",
       lat: "52.4777",
       lng: "-2.1191",
@@ -59,7 +59,7 @@ const dudley1 = [{
       description:
         '<p>Another aged transportation system ran close to the original transportation system of the old black country!</p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-1/railline.jpg"></img>',
     }],
- dudley2 = [{ // Dudley 2
+ dudley2 = [{ // Dudley 2 locations data
       title: "Blowers Green Pump House",
       lat: "52.49824",
       lng: "-2.09684",
@@ -144,7 +144,7 @@ const dudley1 = [{
       description:
         '<p>Come see the last ever canal tunnel to be built in the UK! bring a torch!</p> <img style="width:100%;height:20%;float:left;" src="assets/images/dudley-2/tunnel-netherton.jpg"></img>',
     }],
- stourbridge = [{  // Stourbridge
+ stourbridge = [{  // Stourbridge locations data
       title: "Buckpool Nature Reserve",
       lat: "52.48121",
       lng: "-2.14528",
@@ -214,7 +214,7 @@ const dudley1 = [{
     
 let markers = [];
 
-function initMap() { //main map view - code insired by the User-Centric module from Code Institute
+function initMap() { //main map view - code insired by the Interactive-Frontend module from Code Institute
   var map = new google.maps.Map(document.getElementById("map"));
 
     // markers
